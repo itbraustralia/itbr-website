@@ -1,6 +1,0 @@
-#!/bin/sh
-
-set -e
-
-npm install -g gh-pages
-gh-pages -d _site

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notícias – ITBR Australia</title>
+  <meta name="description" content="As últimas notícias e novidades da comunidade ITBR Australia." />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon1.png" />
+  <link rel="icon" type="image/png" sizes="300x300" href="assets/img/favicon2.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon2.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo-sm.png" alt="ITBR Australia" />
+        <span>IT.BR Australia<small>Brazilian IT Professionals</small></span>
+      </a>
+      <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="comunidades.html">Comunidades</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="noticias.html" class="active">Notícias</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="links.html">Links Úteis</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Notícias</h1>
+      <nav class="breadcrumb"><a href="index.html">Home</a><span class="sep">›</span><span class="current">Notícias</span></nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid cols-3">
+        <article class="post">
+          <div class="thumb"><img src="assets/img/news-adelaide.jpg" alt="1º Happy Hour de Adelaide" /></div>
+          <div class="body">
+            <span class="date">11 Dez 2023</span>
+            <h3>1º Happy Hour de Adelaide – SA</h3>
+            <p>O ano de 2023 foi marcado pelo primeiro encontro de profissionais brasileiros de IT residentes em Adelaide – SA.</p>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><img src="assets/img/15-happy-hour-sydney.jpg" alt="#15 Happy Hour & Talks Sydney" /></div>
+          <div class="body">
+            <span class="date">08 Mar 2024</span>
+            <h3>#15 Happy Hour &amp; Talks – Sydney</h3>
+            <p>Começamos o ano com o nosso tradicional Happy Hour + talks no mais famoso Rooftop de Sydney – Pyrmont Bridge…</p>
+          </div>
+        </article>
+        <article class="post">
+          <div class="thumb"><img src="assets/img/14-happy-hour-sydney.jpg" alt="#14 Happy Hour & Talks Sydney" /></div>
+          <div class="body">
+            <span class="date">03 Mar 2023</span>
+            <h3>#14 Happy Hour &amp; Talks – Sydney</h3>
+            <p>Nosso tradicional Happy Hour + talks esteve presente mais uma vez no mais famoso Rooftop de Sydney – Pyrmont Bridge…</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container" style="max-width:720px;text-align:center">
+      <h2 class="section-title">Inscreva-se em nossa Newsletter</h2>
+      <p class="section-lead">Receba as novidades, eventos e oportunidades da comunidade direto no seu e-mail.</p>
+      <form style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap" onsubmit="return false">
+        <input type="email" placeholder="Seu melhor e-mail" required
+               style="flex:1;min-width:240px;padding:13px 18px;border:1px solid var(--border);border-radius:999px;font-size:1rem" />
+        <button class="btn btn-primary" type="submit">Inscrever</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-sm.png" alt="ITBR Australia" />
+        <p>ITBR Australia é uma comunidade sem fins lucrativos de brasileiros que trabalham em TI na Austrália, reunindo e ajudando os brazucas a entrarem no mercado de tecnologia.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/groups/itbraustralia" target="_blank" rel="noopener" title="Facebook">f</a>
+          <a href="https://www.youtube.com/c/ITBRAustralia/featured" target="_blank" rel="noopener" title="YouTube">▶</a>
+          <a href="mailto:itbraustralia@gmail.com" title="E-mail">@</a>
+        </div>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="comunidades.html">Comunidades</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="noticias.html">Notícias</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="galeria.html">Galeria de vídeos</a></li>
+          <li><a href="links.html">Links Úteis</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatos</h4>
+        <ul>
+          <li><a href="mailto:itbraustralia@gmail.com">itbraustralia@gmail.com</a></li>
+          <li><a href="https://www.facebook.com/groups/itbraustralia" target="_blank" rel="noopener">Grupo no Facebook</a></li>
+          <li><a href="https://www.youtube.com/c/ITBRAustralia/featured" target="_blank" rel="noopener">Canal no YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      Copyright © <span id="year">2024</span> ITBR Australia – Todos os direitos reservados.
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
