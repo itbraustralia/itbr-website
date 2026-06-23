@@ -1,43 +1,40 @@
-# IT.BR Australia — Jekyll Site
+# ITBR Australia — Website
 
-## Hosting on GitHub Pages
+Static recreation of the **ITBR Australia** site (Comunidade Brasileira de TI na Austrália),
+rebuilt as clean, dependency-free HTML/CSS for hosting on **GitHub Pages**.
 
-### Setup (one-time)
+## Structure
 
-1. **Push this repo to GitHub** as `itbraustralia/itbraustralia.github.io` (or any repo name)
-
-2. **Enable GitHub Pages** in the repo:
-   - Go to **Settings → Pages**
-   - Under *Source*, select **GitHub Actions**
-
-3. **Push to `main`** — the Actions workflow will build and deploy automatically.
-
-### Custom domain (itbr.com.au)
-
-The `CNAME` file already contains `itbr.com.au`.
-
-In your DNS provider, add:
 ```
-Type: A
-Name: @
-Values:
-  185.199.108.153
-  185.199.109.153
-  185.199.110.153
-  185.199.111.153
-
-Type: CNAME
-Name: www
-Value: itbraustralia.github.io
+itbr-new/
+├── index.html          # Home
+├── comunidades.html    # Comunidades
+├── eventos.html        # Eventos
+├── noticias.html       # Notícias
+├── faq.html            # Perguntas frequentes
+├── galeria.html        # Galeria de vídeos
+├── links.html          # Links úteis
+├── assets/
+│   ├── css/style.css
+│   ├── js/main.js
+│   └── img/            # logo, fotos e imagens
+└── .nojekyll           # impede o processamento Jekyll no GitHub Pages
 ```
 
-Then in GitHub: **Settings → Pages → Custom domain** → enter `itbr.com.au` and enable **Enforce HTTPS**.
+## Rodar localmente
 
-### Local development
+A partir da raiz do projeto, execute:
 
-```bash
-bundle install
-bundle exec jekyll serve
+```powershell
+./start.ps1
 ```
 
-Open http://localhost:4000
+O script sobe um servidor estático e abre `http://localhost:8080` no navegador.
+
+## Publicar no GitHub Pages
+
+1. Faça commit do conteúdo desta pasta no repositório.
+2. Em **Settings → Pages**, selecione a branch e a pasta `/itbr-new` (ou mova o conteúdo para a raiz / `docs`).
+3. O site ficará disponível em `https://<usuario>.github.io/<repo>/`.
+
+Como todos os caminhos são relativos, o site funciona em qualquer subdiretório.
